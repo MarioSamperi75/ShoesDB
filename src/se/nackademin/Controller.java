@@ -28,6 +28,7 @@ public class Controller {
                 password = sc.nextLine().trim();
 
                 customer = rep.checkpassword(lastname, password);
+                System.out.println(customer.getId());
                 if (customer != null)
                     break;
             }
